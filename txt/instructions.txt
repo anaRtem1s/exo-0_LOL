@@ -11,7 +11,7 @@ const favoris = ["Darius", "Ahri", "Thresh"];
 2. Crée une fonction d'affichage pour les champions déjà présents et affiche les dans .liste-favoris
 3. Crée une fonction pour ajouter des champions au tableau déjà existant
 4. Mets à jour l'affichage
-5. On affiche le nom des champions ainsi que le nombre de champions déjà mis en favoris au total
+5. On affiche le nom des champions ainsi que le nombre de champions déjà mis en favoris au total  - DANS MESSAGE ???
 
   <h1>⭐ Mes champions favoris</h1>
 
