@@ -16,26 +16,15 @@ const favouritesList = document.querySelector('.listeFavoris');
 
 const favoris = ["Darius", "Ahri", "Thresh"];
 
-let champion = inputBox.value;
-
 // =================================
 // 🎊 3. Fonctions (logique métier)
 // =================================
 
-//2. Crée une fonction d'affichage pour les champions déjà présents et affiche les dans .liste-favoris
-
-// function displayResult (result, myDisplay) {
-//    inputBox.value = "";
-//    inputBox.focus();
-//    favouritesList.innerHTML = "";
-//    return myDisplay.innerHTML += `${result} - Nombre de champions : ${favoris.length} `;
-// }
-
 
 function displayResult() {
    
-  favouritesList.innerHTML = "";
-  displayBox.innerHTML = "";
+   favouritesList.innerHTML = "";
+   displayBox.innerHTML = "";
    
    for (let i = 0; i < favoris.length;  i++) {
       
@@ -56,13 +45,12 @@ function addChampion (champion, favoris) {
 // 🧲 4. Événements (interactions)
 // =================================
 
+displayResult();
 
 submitBtn.addEventListener('click', () => {
    
    let champion = inputBox.value;
    
-   // displayResult(favoris, favouritesList);
-
    addChampion(champion, favoris);
    displayResult();
 });
